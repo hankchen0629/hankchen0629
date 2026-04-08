@@ -67,26 +67,17 @@
 
 ---
 
-### 📊 Amazon 評論評分預測
-> 使用 Transformer 模型進行多分類情感分析
-
-- 系統性比較 **DistilBERT** 與 **RoBERTa** 模型表現
-- 在 Google Colab 執行多組實驗，追蹤驗證準確率提升
-- 最佳結果由 **roberta-base** 達成
-
-`Python` `RoBERTa` `DistilBERT` `Google Colab` `NLP`
-
 ### 🤖 [Machine Learning Assignments](https://github.com/hankchen0629/ml-assignments)
 > 機器學習課程作業集
 
 - 從頭用 NumPy 手刻 5 層深度神經網路（前向／反向傳播）
 - Titanic 生存預測、Boston 房價預測（XGBoost）
 - 電影評論情感分析、Email 分類器
+- Amazon 評論評分預測（RoBERTa，5 星分類）
 
 `Python` `NumPy` `XGBoost` `NLP` `scikit-learn`
 
 ---
-
 
 ## 📫 聯絡我 / Contact
 
