@@ -1,7 +1,6 @@
 <h1 align="center">嗨，我是陳思翰 (Hank Chen) 👋</h1>
 
 <p align="center">
-  <b>轉職中的 AI / Python 開發者</b><br/>
   台北市立大學 資訊科學系 畢業
 </p>
 
