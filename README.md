@@ -76,6 +76,15 @@
 
 `Python` `RoBERTa` `DistilBERT` `Google Colab` `NLP`
 
+### 🤖 [Machine Learning Assignments](https://github.com/hankchen0629/ml-assignments)
+> 機器學習課程作業集
+
+- 從頭用 NumPy 手刻 5 層深度神經網路（前向／反向傳播）
+- Titanic 生存預測、Boston 房價預測（XGBoost）
+- 電影評論情感分析、Email 分類器
+
+`Python` `NumPy` `XGBoost` `NLP` `scikit-learn`
+
 ---
 
 
