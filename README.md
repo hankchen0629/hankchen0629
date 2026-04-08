@@ -56,7 +56,7 @@
 
 ## 🚀 專案 / Projects
 
-### 💊 MediSnap（智藥快搜）
+### 💊 [MediSnap（智藥快搜）](https://github.com/hankchen0629/medisnap)
 > AI 驅動的藥品辨識與用藥衛教系統
 
 - 建構完整 **RAG Pipeline**，使用 MedAlbert 嵌入模型 + NumPy 向量儲存
