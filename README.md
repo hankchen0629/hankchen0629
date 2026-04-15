@@ -62,7 +62,7 @@
 ### 💊 [MediSnap（智藥快搜）](https://github.com/hankchen0629/medisnap)
 > AI 驅動的藥品辨識與用藥衛教系統
 
-- 建構完整 **RAG Pipeline**，使用 MedAlbert 嵌入模型 + NumPy 向量儲存
+- 建構完整 **RAG Pipeline**，使用 Medbert 嵌入模型 + NumPy 向量儲存
 - 處理台灣藥品仿單，整理為六大類標準化知識庫
 - 整合 **YOLO 藥品辨識模型**，部署於 Streamlit + ngrok (Google Colab)
 - 解決 torch 版本限制、NumPy 衝突等複雜環境問題
