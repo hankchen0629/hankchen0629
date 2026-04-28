@@ -19,9 +19,8 @@
 
 - 🎓 台北市立大學 資訊科學系
 - 🔄 目前積極轉職中，專注於 **AI / ML** 與 **Python 開發**
-- 🤖 熟悉 **RAG 系統建置**、**NLP 模型訓練**、**電腦視覺**
+- 🤖 熟悉 RAG 系統建置、NLP 模型訓練（Fine-tuning / Contrastive Learning）、電腦視覺（YOLOv8）、PyTorch / HuggingFace Transformers、LLM 應用與部署（Ollama / Groq API）、向量資料庫（ChromaDB）
 - 💊 參與開發 **MediSnap（智藥快搜）** — AI 驅動的藥品辨識與衛教系統
-- 🏋️ 實作過 RoBERTa fine-tuning、手刻深度神經網路（NumPy）
 - 📍 Taipei, Taiwan
 
 ---
