@@ -1,9 +1,7 @@
 <h1 align="center">嗨，我是陳思翰 (Hank Chen) 👋</h1>
-
 <p align="center">
   台北市立大學 資訊科學系 畢業
 </p>
-
 <p align="center">
   <a href="mailto:hank880629@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-hank880629@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -20,7 +18,7 @@
 - 🎓 台北市立大學 資訊科學系
 - 🔄 目前積極轉職中，專注於 **AI / ML** 與 **Python 開發**
 - 🤖 熟悉 RAG 系統建置、NLP 模型訓練（Fine-tuning / Contrastive Learning）、電腦視覺（YOLOv8）、PyTorch / HuggingFace Transformers、LLM 應用與部署（Ollama / Groq API）、向量資料庫（ChromaDB）
-- 💊 參與開發 **MediSnap（智藥快搜）** — AI 驅動的藥品辨識與衛教系統
+- 💊 參與開發 **MediSnap（智藥快搜）** — AI 驅動的藥品辨識與衛教系統，負責完整 RAG Pipeline 建置與 MedBERT 兩階段 fine-tuning
 - 📍 Taipei, Taiwan
 
 ---
@@ -32,6 +30,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
@@ -43,6 +42,9 @@
   <img src="https://img.shields.io/badge/RAG Pipeline-6C63FF?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
   <img src="https://img.shields.io/badge/Transformers (BERT / RoBERTa)-FF6F00?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Contrastive Learning-8A2BE2?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/LLM (Ollama / Groq)-00A67E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/NLP-20B2AA?style=for-the-badge&logoColor=white" />
 </p>
 
@@ -61,24 +63,25 @@
 ### 💊 [MediSnap（智藥快搜）](https://github.com/hankchen0629/medisnap)
 > AI 驅動的藥品辨識與用藥衛教系統
 
-- 建構完整 **RAG Pipeline**，使用 Medbert 嵌入模型 + NumPy 向量儲存
-- 處理台灣藥品仿單，整理為六大類標準化知識庫
-- 整合 **YOLO 藥品辨識模型**，部署於 Streamlit + ngrok (Google Colab)
-- 解決 torch 版本限制、NumPy 衝突等複雜環境問題
+- 建構完整 **RAG Pipeline**，對 MedBERT 進行兩階段 fine-tuning（MLM + Contrastive Learning）優化向量空間
+- 處理台灣藥品仿單，整理為六大類標準化知識庫，建置 **ChromaDB** 向量資料庫
+- 整合 **YOLOv8 藥品辨識模型**，透過 **FastAPI** 建置後端 API，部署於 Google Colab + ngrok
+- 支援圖片辨識、文字追問、關鍵字搜尋三種查詢模式
+- 解決 numpy 版本衝突、ChromaDB schema 相容性等複雜環境問題
 
-`Python` `PyTorch` `RAG` `YOLO` `Streamlit` `HuggingFace`
+`Python` `PyTorch` `RAG` `YOLO` `FastAPI` `ChromaDB` `HuggingFace` `Ollama`
 
 ---
 
 ### 🤖 [Machine Learning Assignments](https://github.com/hankchen0629/ml-assignments)
-> 機器學習課程作業集
+> 機器學習課程作業集，涵蓋從頭實作神經網路到 Transformer 模型應用
 
-- 從頭用 NumPy 手刻 5 層深度神經網路（前向／反向傳播）
-- Titanic 生存預測、Boston 房價預測（XGBoost）
-- 電影評論情感分析、Email 分類器
-- Amazon 評論評分預測（RoBERTa，5 星分類）
+- 從頭用 **NumPy 手刻 5 層深度神經網路**（前向傳播／反向傳播），訓練準確率 84.3%
+- Titanic 生存預測（邏輯迴歸手刻 + sklearn）、Boston 房價預測（XGBoost）
+- 電影評論情感分析（SGD + N-gram 特徵）、Email 分類器（自設 10 維特徵向量）
+- **Amazon 評論評分預測**：以 RoBERTa fine-tuning 實作 5 星分類，系統性比較 TF-IDF、DistilBERT、RoBERTa，驗證準確率約 85%
 
-`Python` `NumPy` `XGBoost` `NLP` `scikit-learn`
+`Python` `NumPy` `PyTorch` `XGBoost` `NLP` `RoBERTa` `scikit-learn`
 
 ---
 
